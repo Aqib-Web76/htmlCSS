@@ -2,13 +2,13 @@ div#container{
     width: 100%;
     margin: 0 auto;
     padding: 0;
-    border: 1px solid red;
+
     
 }
 header{
     width: 100%;
     height: 70px;
-    border: 1px solid black;
+
 }
 header img{
     width: 70px;
@@ -40,4 +40,78 @@ header div#search{
 header div#search input#nameField{
     width: 100px;
     border: 1px solid black;
+
+    border-radius: 5px;
+}
+/* header div#search input#nameField:focus{
+    border: 2px solid rgb(223, 10, 10);
+} */
+header div#search input#btn-search{
+    border-radius: 7px;
+    color: 2px solid rgb(8, 8, 8) ;
+}
+header div#search input#btn-search:hover{
+    background-color: 2px solid black;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+nav{
+    width: 100%;
+    height: 40px;
+    border: 1px solid blue;
+    float: left;
+}
+nav ul {
+ list-style-type: none;
+ padding-top: 15px;
+
+}
+nav ul li{
+    display: inline-block;
+
+}
+nav ul li a{
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 50px;
+    height: 20px;
+    width: 60px;
+    color: blue;
+
+
+
+}
+nav ul li a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+aside{
+    border: 1px solid blue;
+    float: left;
+    width: 25%;
+    height: 250px;
+    
+}
+aside ul{
+    list-style-type: none;
+}
+aside ul li{
+display: block;
+margin-top: 20px;
+padding-left: 20px;
+}
+aside ul li a{
+ display: inline-block;
+text-decoration: none;
+font-weight: bold;
+color: blue;
+text-align: center;
+width: 130px;
+height: 20px;
+background-color: rgb(100, 126, 117);
+border-radius: 5px;
+}
+aside ul li a:hover{
+color: black;
 }
