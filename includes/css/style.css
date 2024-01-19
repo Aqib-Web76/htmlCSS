@@ -1,117 +1,179 @@
-div#container{
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
+/* color choosing  rgb(2,115,181) */
 
-    
+div#container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
-header{
-    width: 100%;
-    height: 70px;
-
+header {
+  width: 100%;
+  height: 70px;
 }
-header img{
-    width: 70px;
-    height: 70px;
-    float: left;
+header img {
+  width: 70px;
+  height: 70px;
+  float: left;
 }
 header span#title {
- font-weight: bold;
- font-size: 1.5em;
- float: left;
- padding-top: 20px;
- padding-left: 10px;
+  font-weight: bold;
+  font-size: 1.5em;
+  float: left;
+  padding-top: 20px;
+  padding-left: 10px;
 }
 /*to do*/
-header span#slogon{
-    float: left;
-    clear: both;
-    padding-left: 90px;
-    top: -20px;
-    position: relative;
-  
+header span#slogon {
+  float: left;
+  clear: both;
+  padding-left: 90px;
+  top: -20px;
+  position: relative;
 }
-header div#search{
-    float: right;
-    top: -30px;
-    position: relative;
-    padding-right: 10px;
+header div#search {
+  float: right;
+  top: -30px;
+  position: relative;
+  padding-right: 10px;
 }
-header div#search input#nameField{
-    width: 100px;
-    border: 1px solid black;
+header div#search input#nameField {
+  width: 100px;
+  border: 1px solid black;
 
-    border-radius: 5px;
+  border-radius: 5px;
 }
 /* header div#search input#nameField:focus{
     border: 2px solid rgb(223, 10, 10);
 } */
-header div#search input#btn-search{
-    border-radius: 7px;
-    color: 2px solid rgb(8, 8, 8) ;
+header div#search input#btn-search {
+  border-radius: 7px;
+  color: 2px solid rgb(8, 8, 8);
 }
-header div#search input#btn-search:hover{
-    background-color: 2px solid black;
-    color: white;
-    background-color: black;
-    cursor: pointer;
+header div#search input#btn-search:hover {
+  background-color: 2px solid black;
+  color: white;
+  background-color: black;
+  cursor: pointer;
 }
-nav{
-    width: 100%;
-    height: 40px;
-    border: 1px solid blue;
-    float: left;
+nav {
+  width: 100%;
+  height: 40px;
+  float: left;
 }
 nav ul {
- list-style-type: none;
- padding-top: 15px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 50px;
+  height: 20px;
+  width: 60px;
+  color: rgb(2, 115, 181);
+}
+nav ul li a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+aside {
+  margin-top: 5px;
+  float: left;
+  width: 25%;
+  height: 250px;
+}
+aside ul {
+  list-style-type: none;
+}
+aside ul li {
+  display: block;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+aside ul li a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  width: 130px;
+  height: 20px;
+  background-color: rgb(21, 115, 181);
+  border-radius: 5px;
+}
+aside ul li a:hover {
+  color: black;
+}
 
+div#products {
+  height: 250px;
+  width: 70%;
+  float: left;
+  margin-top: 15px;
+  background-color: rgb(228, 240, 248);
 }
-nav ul li{
-    display: inline-block;
+div.card {
+  width: 160px;
+  height: 235px;
+  text-align: center;
+  border: 0.5px solid rgb(154, 190, 211);
+  float: left;
+  margin: 15px;
+  background-color: white;
+}
+div.card:hover {
+  box-shadow: 0 0 10px rgb(96, 154, 187);
+  cursor: pointer;
+}
+div.card img {
+  width: 100px;
+  height: 100px;
+  align-items: center;
+}
+div.card h1 {
+  font-size: 1.5em;
 
+  font-weight: bold;
+  color: rgb(2, 115, 181);
 }
-nav ul li a{
-    text-decoration: none;
-    display: inline-block;
-    margin-left: 50px;
-    height: 20px;
-    width: 60px;
-    color: blue;
+div.card p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: x-small;
+  padding: 10px;
+}
 
-
-
+div.card p.price {
+  font-size: large;
+  color: rgb(2, 115, 181);
+  font-weight: bold;
 }
-nav ul li a:hover{
-    font-weight: bold;
-    text-decoration: underline;
+div.card button {
+  width: 100%;
+  background-color: rgb(2, 115, 181);
+  color: white;
+  border: none;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
 }
-aside{
-    border: 1px solid blue;
-    float: left;
-    width: 25%;
-    height: 250px;
-    
+div.card button:hover {
+  background-color: rgb(15, 62, 88);
+  cursor: pointer;
 }
-aside ul{
-    list-style-type: none;
+footer {
+  width: 100%;
+  margin-top: 2px;
+  clear: both;
+  float: left;
 }
-aside ul li{
-display: block;
-margin-top: 20px;
-padding-left: 20px;
-}
-aside ul li a{
- display: inline-block;
-text-decoration: none;
-font-weight: bold;
-color: blue;
-text-align: center;
-width: 130px;
-height: 20px;
-background-color: rgb(100, 126, 117);
-border-radius: 5px;
-}
-aside ul li a:hover{
-color: black;
+footer h1 {
+  padding: 20px;
+  background-color: rgb(216, 236, 248);
+  margin-top: 39px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: small;
 }
