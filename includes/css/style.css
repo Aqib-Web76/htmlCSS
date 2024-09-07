@@ -1,179 +1,284 @@
-/* color choosing  rgb(2,115,181) */
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+
+/* Existing styles */
 
 div#container {
   width: 100%;
   margin: 0 auto;
-  padding: 0;
+  padding: 0; 
 }
+
+/* Updated header styles */
 header {
   width: 100%;
   height: 70px;
-}
-header img {
-  width: 70px;
-  height: 70px;
-  float: left;
-}
-header span#title {
-  font-weight: bold;
-  font-size: 1.5em;
-  float: left;
-  padding-top: 20px;
-  padding-left: 10px;
-}
-/*to do*/
-header span#slogon {
-  float: left;
-  clear: both;
-  padding-left: 90px;
-  top: -20px;
-  position: relative;
-}
-header div#search {
-  float: right;
-  top: -30px;
-  position: relative;
-  padding-right: 10px;
-}
-header div#search input#nameField {
-  width: 100px;
-  border: 1px solid black;
-
-  border-radius: 5px;
-}
-/* header div#search input#nameField:focus{
-    border: 2px solid rgb(223, 10, 10);
-} */
-header div#search input#btn-search {
-  border-radius: 7px;
-  color: 2px solid rgb(8, 8, 8);
-}
-header div#search input#btn-search:hover {
-  background-color: 2px solid black;
-  color: white;
-  background-color: black;
-  cursor: pointer;
-}
-nav {
-  width: 100%;
-  height: 40px;
-  float: left;
-}
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-nav ul li {
-  display: inline-block;
-}
-nav ul li a {
-  text-decoration: none;
-  display: inline-block;
-  margin-left: 50px;
-  height: 20px;
-  width: 60px;
-  color: rgb(2, 115, 181);
-}
-nav ul li a:hover {
-  font-weight: bold;
-  text-decoration: underline;
-}
-aside {
-  margin-top: 5px;
-  float: left;
-  width: 25%;
-  height: 250px;
-}
-aside ul {
-  list-style-type: none;
-}
-aside ul li {
-  display: block;
-  margin-top: 20px;
-  padding-left: 20px;
-}
-aside ul li a {
-  display: inline-block;
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-  width: 130px;
-  height: 20px;
-  background-color: rgb(21, 115, 181);
-  border-radius: 5px;
-}
-aside ul li a:hover {
-  color: black;
-}
-
-div#products {
-  height: 250px;
-  width: 70%;
-  float: left;
-  margin-top: 15px;
-  background-color: rgb(228, 240, 248);
-}
-div.card {
-  width: 160px;
-  height: 235px;
-  text-align: center;
-  border: 0.5px solid rgb(154, 190, 211);
-  float: left;
-  margin: 15px;
-  background-color: white;
-}
-div.card:hover {
-  box-shadow: 0 0 10px rgb(96, 154, 187);
-  cursor: pointer;
-}
-div.card img {
-  width: 100px;
-  height: 100px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
-div.card h1 {
-  font-size: 1.5em;
 
-  font-weight: bold;
-  color: rgb(2, 115, 181);
+#logo {
+  display: flex;
+  align-items: center;
+  margin-left: 20px; /* Add left margin to logo */
 }
-div.card p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: x-small;
+
+#logo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+#title {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-left: 10px;
+}
+
+#slogon {
+  margin-left: 15px;
+  font-size: 0.9em;
+}
+
+#search {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Add right margin to search box and button */
+}
+
+#nameField {
+  width: 150px; /* Adjust width as needed */
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+#btn-search {
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 7px;
+  border: none;
+  background-color: rgb(2, 115, 181);
+  color: white;
+  cursor: pointer;
+}
+
+#btn-search:hover {
+  background-color: rgb(15, 62, 88);
+  color: white;
+}
+
+/* Continue with other existing styles */
+
+
+/* Container */
+div#container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  background-color: rgb(2,115,181);
+  color: white;
+}
+
+header #logo {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+}
+
+header span#title {
+  font-weight: bold;
+  font-size: 1.8em;
+  margin-left: 10px;
+}
+
+header span#slogon {
+  font-size: 1em;
+  margin-left: 20px;
+}
+
+header div#search {
+  display: flex;
+}
+
+header div#search input#nameField {
+  width: 150px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+header div#search input#btn-search {
+  padding: 5px 10px;
+  background-color: white;
+  color: rgb(2, 115, 181);
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header div#search input#btn-search:hover {
+  background-color: rgb(15, 62, 88);
+  color: white;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0;
+  background-color: rgb(15, 62, 88);
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Sidebar */
+aside ul {
+  list-style-type: none;
   padding: 10px;
 }
 
-div.card p.price {
-  font-size: large;
-  color: rgb(2, 115, 181);
-  font-weight: bold;
+aside ul li {
+  margin: 10px 0;
 }
+
+aside ul li a {
+  display: inline-block;
+  background-color: rgb(2, 115, 181);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+aside ul li a:hover {
+  background-color: rgb(15, 62, 88);
+}
+
+/* Product Cards */
+div#products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+  background-color: rgb(228, 240, 248);
+  padding: 20px;
+}
+
+div.card {
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 15px;
+  background-color: white;
+  transition: box-shadow 0.3s;
+  
+}
+
+div.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+div.card img {
+  width: 100px;
+  height: 100px;
+}
+
+div.card h1 {
+  font-size: 1.3em;
+  color: rgb(2, 115, 181);
+}
+
+div.card p {
+  font-size: 0.9em;
+  margin: 10px 0;
+}
+
+div.card p.price {
+  font-weight: bold;
+  color: rgb(2, 115, 181);
+}
+
 div.card button {
   width: 100%;
+  padding: 10px;
   background-color: rgb(2, 115, 181);
   color: white;
   border: none;
-  font-family: "Times New Roman", Times, serif;
-  font-size: large;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
 }
+
 div.card button:hover {
   background-color: rgb(15, 62, 88);
-  cursor: pointer;
 }
+
+/* Footer */
 footer {
-  width: 100%;
-  margin-top: 2px;
-  clear: both;
-  float: left;
-}
-footer h1 {
-  padding: 20px;
-  background-color: rgb(216, 236, 248);
-  margin-top: 39px;
   text-align: center;
-  font-family: "Courier New", Courier, monospace;
-  font-size: small;
+  padding: 20px;
+  background-color: rgb(2, 115, 181);
+  color: white;
+  margin-top: 30px;
 }
+
+footer h1 {
+  font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header, nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  div#products {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  div.card {
+    width: 100%;
+  }
+}
+  
