@@ -167,7 +167,7 @@ nav ul li a:hover {
 
 /* Sidebar */
 aside ul {
-  list-style-type: none;
+  /* list-style-type: none; */
   padding: 10px;
 }
 
@@ -187,6 +187,10 @@ aside ul li a {
 aside ul li a:hover {
   background-color: rgb(15, 62, 88);
 }
+.mycard{
+  display: flex;
+  justify-content: space-between;
+}
 
 /* Product Cards */
 div#products {
@@ -197,7 +201,7 @@ div#products {
   background-color: rgb(228, 240, 248);
   padding: 20px;
 }
-
+/* 
 div.card {
   width: 200px;
   border: 1px solid #ddd;
@@ -207,16 +211,37 @@ div.card {
   background-color: white;
   transition: box-shadow 0.3s;
   
-}
+} */
 
 div.card:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* 
+div.card img {
+  width: 100px;
+  height: 100px;
+  align-items: center;
+} */
+
+
+div.card {
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 15px;
+  background-color: white;
+  transition: box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
 }
 
 div.card img {
   width: 100px;
   height: 100px;
 }
+
 
 div.card h1 {
   font-size: 1.3em;
